@@ -1,0 +1,64 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+	border-radius: 4px;
+	padding: 0 16px;
+	height: 40px;
+	cursor: pointer;
+	background-color: gray;
+	border: 1px solid rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+	margin-right: 16px;
+	transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+	background-color: black;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+	background-color: black;
+}
+.logo {
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.card {
+	padding: 2em;
+}
+
+.read-the-docs {
+	color: #888;
+}
